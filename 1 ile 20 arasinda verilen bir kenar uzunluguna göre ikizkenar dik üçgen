@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int kenar;
+    int i,j;
+    printf("Bir kenar uzunlugu giriniz:");
+    scanf("%d",&kenar);
+    for(i=1;i<=kenar;i++){
+        for(j=4;j>=kenar-i+1;j--){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}

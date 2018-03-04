@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int adet;
+    printf("Kac adet sayi gireceksiniz:");
+    scanf("%d",&adet);
+    int i;
+    int sayi;
+    printf("Sayilar (%d adet) :");
+    int pozitif=0;
+    int negatif=0;
+    for(i=1;i<=adet;i++){
+        scanf("%d",&sayi);
+        if(sayi>0){
+            pozitif++;
+        }
+        else
+            negatif++;
+    }
+    printf("Girilen %d sayinin %d tanesi negatif,%d tanesi pozitiftir.",adet,negatif,pozitif);
+    return 0;
+}

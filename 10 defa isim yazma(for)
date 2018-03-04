@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayac;
+    for(sayac=1;sayac<=10;sayac++)
+    {
+        printf("%d.sayi=%d\n",sayac,sayac);
+    }
+    return 0;
+}

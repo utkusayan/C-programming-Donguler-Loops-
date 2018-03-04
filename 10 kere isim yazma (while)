@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayac;
+    sayac=1;
+    /*BASLA:
+        printf("UTKU\n");
+        sayac=sayac+1;
+        if(sayac<=10)
+        {
+            goto BASLA;
+        }*/
+     //go to komutu yapisalligi ve okunabilirligi azalttigi icin pek tavsiye edilmez//
+
+    while(sayac<=10)
+    {
+        printf("%d.UTKU\n",sayac);
+        sayac++;
+    }
+    return 0;
+}

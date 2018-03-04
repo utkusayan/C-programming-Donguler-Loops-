@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayac=1;
+    int toplam=0;
+    while(sayac<=100)
+    {
+        toplam=toplam+sayac;
+        sayac=sayac+1;
+    }
+    printf("TOPLAM:%d",toplam);
+    return 0;
+}

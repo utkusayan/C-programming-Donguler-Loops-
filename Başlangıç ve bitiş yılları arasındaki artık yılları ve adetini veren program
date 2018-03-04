@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int baslangic_yili;
+    int bitis_yili;
+    printf("Baslangic yilini giriniz:");
+    scanf("%d",&baslangic_yili);
+    printf("Bitis yilini giriniz:");
+    scanf("%d",&bitis_yili);
+    int i;
+    int toplam=0;
+    for(i=baslangic_yili;i<=bitis_yili;i++)
+    {
+        if(i%4==0)
+        {
+            printf("%d\t",i);
+            toplam++;
+        }
+
+    }
+    printf("\n---------------\n");
+    printf("Toplam %d adet",toplam);
+    return 0;
+}

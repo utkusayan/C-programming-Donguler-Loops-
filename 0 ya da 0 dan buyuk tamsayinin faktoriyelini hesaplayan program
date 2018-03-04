@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi;
+    printf("Bir pozitif tamsayi giriniz:");
+    scanf("%d",&sayi);
+    if(sayi<0)
+    {
+        printf("Yanlis!!Lutfen pozitif tamsayi giriniz:");
+        scanf("%d",&sayi);
+    }
+    int sayac=1;
+    int factoriyel=1;
+    while(sayac<=sayi)
+    {
+        factoriyel=factoriyel*sayac;
+        sayac++;
+    }
+    printf("Girilen tamsayi:%d\n",sayi);
+    printf("Faktoriyeli:%d\n",factoriyel);
+
+    return 0;
+}

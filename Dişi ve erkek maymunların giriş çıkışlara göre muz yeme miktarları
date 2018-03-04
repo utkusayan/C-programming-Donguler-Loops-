@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    char cinsiyet;
+    printf("Maymunun cinsiyetini giriniz(Erkek E,Disi D) :");
+    scanf("%c",&cinsiyet);
+    int giris_sayisi;
+    printf("Maymun kafese kac kez girdi:");
+    scanf("%d",&giris_sayisi);
+    printf("-----------------------------\n");
+    float muz_sayisi=0;
+    int i;
+    switch (cinsiyet){
+      case 'e':
+      case 'E':
+        for(i=1;i<5;i++){
+            muz_sayisi=muz_sayisi+(2*i);
+            printf("%d girisinde toplamda %.f muz yemis oldu.\n",i,muz_sayisi);
+        }
+        if(giris_sayisi>=5){
+            for(i=5;i<=giris_sayisi;i++){
+                muz_sayisi=muz_sayisi+(muz_sayisi-giris_sayisi)/2+1;
+
+                printf("%d girisinde toplamda %.f muz yemis oldu.\n",i+1,muz_sayisi);
+            }
+        }
+        break;
+
+      case 'D':
+      case 'd':
+        for(i=1;i<5;i++){
+            muz_sayisi=muz_sayisi+i;
+            printf("%d girisinde toplamda %.f muz yemis oldu.\n",i,muz_sayisi);
+        }
+        if(giris_sayisi>=5){
+            for(i=5;i<=giris_sayisi;i++){
+                muz_sayisi=muz_sayisi+(muz_sayisi-giris_sayisi)/2+1;
+                printf("%d girisinde toplamda %.f muz yemis oldu.\n",i+1,muz_sayisi);
+            }
+        }
+    break;
+    }
+    return 0;
+}

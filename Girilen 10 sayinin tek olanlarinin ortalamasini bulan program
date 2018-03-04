@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi;
+    int i;
+    int toplam=0;
+    int n=0;
+    float ortalama;
+    printf("Sayilari giriniz(10 adet):");
+
+    for(i=1;i<=10;i++)
+    {
+        scanf("%d",&sayi);
+        if(sayi%2==1)
+        {
+            n++;
+            toplam=toplam+sayi;
+        }
+
+
+    }
+    ortalama=toplam/n;
+    printf("Girilen %d adet tek sayinin aritmatik ortalamasi = %.2f",n,ortalama);
+    return 0;
+}

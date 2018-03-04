@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi;
+    printf("Sayi:");
+    scanf("%d",&sayi);
+    int i;
+    int tek_b_adet=0;
+    int iki_b_adet=0;
+    int adet=0;
+    while(sayi/10<10)
+    {
+        printf("Sayi:");
+        scanf("%d",&sayi);
+        adet++;
+        if(sayi/10<1){
+                tek_b_adet++;
+
+        }
+        else
+            iki_b_adet++;
+    }
+    printf("Girilen %d sayinin %d tanesi tek basamakli,%d tanesi iki basamaklidir.",adet,tek_b_adet,iki_b_adet);
+    return 0;
+}

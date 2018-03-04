@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+//111 sonlandýrma sayisidir.
+int main()
+{
+    printf("Kirmizinin kodu:1\n");
+    printf("Yesilin kodu:2\n");
+    printf("Sarinin kodu:3\n");
+    printf("Siyahin kodu:4\n");
+
+    int kod;
+    int i;
+    int kirmizi=0;
+    int yesil=0;
+    int sari=0;
+    int siyah=0;
+    while(kod!=111){
+            printf("Kod giriniz (1,2,3,4 ya da cikmak icin 111):");
+            scanf("%d",&kod);
+                switch(kod){
+    case 1:
+        kirmizi++;
+        break;
+    case 2:
+        yesil++;
+        break;
+    case 3:
+        sari++;
+        break;
+    case 4:
+        siyah++;
+        break;
+
+    default:
+        printf("Hata!! Lutfen gecerli kod giriniz:\n");
+                }
+    }
+    printf("%d Kirmizi,%d Yesil,%d Sari,%d Siyah oje satilmistir.",kirmizi,yesil,sari,siyah);
+
+
+
+    return 0;
+}

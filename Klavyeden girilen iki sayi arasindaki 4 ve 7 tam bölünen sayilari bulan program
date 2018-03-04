@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int sayi1;
+    int sayi2;
+    printf("Birinci sayiyi giriniz:");
+    scanf("%d",&sayi1);
+    printf("Ikinci sayiyi giriniz:");
+    scanf("%d",&sayi2);
+    printf("----------------------\n");
+    int i;
+    int toplam=0;
+
+    if(sayi2>sayi1){
+    for(i=sayi1;i<=sayi2;i++)
+    {
+        if(i%4==0&&i%7==0)
+        {
+            printf("%d  ",i);
+            toplam++;
+        }
+      }
+    }
+    if(sayi1>sayi2){
+        for(i=sayi1;i>=sayi2;i--){
+
+            if(i%4==0&&i%7==0){
+            printf("%d  ",i);
+            toplam++;
+            }
+        }
+    }
+    printf("\nToplam %d tane",toplam);
+
+    return 0;
+}

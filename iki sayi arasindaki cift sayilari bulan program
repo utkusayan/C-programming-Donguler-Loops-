@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number;
+    int ksayi;
+    int bsayi;
+    printf("Kucuk sayiyi giriniz:");
+    scanf("%d",&ksayi);
+    printf("Buyuk sayiyi giriniz:");
+    scanf("%d",&bsayi);
+    int i;
+    h
+    for(i=ksayi;i<=bsayi;i++)
+    {
+        number=i;
+        if(number%2==0)
+        {
+            printf("%d\t",number);
+
+        }
+    }
+    return 0;
+}

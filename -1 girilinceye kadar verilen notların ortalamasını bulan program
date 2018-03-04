@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int toplam=0;
+    int ogrencisayisi=0;
+    float ortalama;
+    int notu;
+
+    printf("Notu giriniz(Sonlandirmak icin -1):");
+    scanf("%d",&notu);
+
+    while(notu != -1)
+    {
+        toplam=toplam+notu;
+        ogrencisayisi++;
+        ortalama=toplam/ogrencisayisi;
+        printf("Notu giriniz(sonlandirmak icin -1):");
+        scanf("%d",&notu);
+
+    }
+    if(ogrencisayisi!=0)
+    {
+        printf("\n\nOrtalama : %.2f",ortalama);
+    }
+
+    return 0;
+}

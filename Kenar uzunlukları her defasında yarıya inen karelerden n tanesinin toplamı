@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int N;
+    int kenar_uzunlugu;
+    float toplam=0;
+    int i;
+    printf("Kare sayisini giriniz   :");
+    scanf("%d",&N);
+    printf("Kenar uzunlugunu giriniz:");
+    scanf("%d",&kenar_uzunlugu);
+    for(i=1;i<=N;i++){
+        toplam=toplam+kenar_uzunlugu;
+        kenar_uzunlugu=kenar_uzunlugu/2;
+    }
+    printf("Toplam alan:%.2f",toplam);
+    return 0;
+}
